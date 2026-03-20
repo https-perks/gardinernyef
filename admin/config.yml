@@ -21,7 +21,13 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - label: "Photo"
+                name: "photo"
+                widget: "image"
+                required: false
+                media_folder: "/images/board"
+                public_folder: "/images/board"
+                allow_multiple: false
               - { label: "Bio", name: "bio", widget: "text" }
 
   - name: "advisory"
@@ -39,7 +45,13 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - label: "Photo"
+                name: "photo"
+                widget: "image"
+                required: false
+                media_folder: "/images/advisory"
+                public_folder: "/images/advisory"
+                allow_multiple: false
               - { label: "Bio", name: "bio", widget: "text" }
 
   - name: "events"
