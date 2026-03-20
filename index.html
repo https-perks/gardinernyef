@@ -257,6 +257,25 @@
       </div>
     </div>
   </footer>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  (function () {
+    const hash = window.location.hash || "";
 
+    const identityTokens = [
+      "invite_token",
+      "confirmation_token",
+      "recovery_token"
+    ];
+
+    const hasIdentityToken = identityTokens.some(token =>
+      hash.includes(token + "=")
+    );
+
+    if (hasIdentityToken) {
+      window.location.replace("/admin/" + hash);
+    }
+  })();
+</script>
 </body>
 </html>
