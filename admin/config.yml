@@ -6,48 +6,97 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "events"
-    label: "Events"
-    folder: "content/events"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Location", name: "location", widget: "string", required: false }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
-
   - name: "board"
     label: "Board Members"
-    folder: "content/board"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Role", name: "role", widget: "string" }
-      - { label: "Photo", name: "photo", widget: "image", required: false }
-      - { label: "Bio", name: "bio", widget: "markdown" }
+    files:
+      - label: "Board Members"
+        name: "board_members"
+        file: "content/board.json"
+        format: "json"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.title}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - { label: "Bio", name: "bio", widget: "text" }
 
-  - name: "staff"
-    label: "Advisory Staff"
-    folder: "content/staff"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Role", name: "role", widget: "string" }
-      - { label: "Photo", name: "photo", widget: "image", required: false }
-      - { label: "Bio", name: "bio", widget: "markdown" }
+  - name: "advisory"
+    label: "Advisory Council"
+    files:
+      - label: "Advisory Council Members"
+        name: "advisory_council"
+        file: "content/advisory.json"
+        format: "json"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.title}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - { label: "Bio", name: "bio", widget: "text" }
 
-  - name: "grants"
-    label: "Connect Grants"
-    folder: "content/grants"
-    create: true
-    slug: "{{year}}-{{slug}}"
-    fields:
-      - { label: "Year", name: "year", widget: "number" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Awarded To", name: "awarded_to", widget: "string" }
-      - { label: "Sponsor", name: "sponsor", widget: "string", required: false }
-      - { label: "Description", name: "description", widget: "markdown" }
+  - name: "events"
+    label: "Events"
+    files:
+      - label: "Events"
+        name: "events_list"
+        file: "content/events.json"
+        format: "json"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
+
+  - name: "grants_current"
+    label: "Connect Grants - Current Year"
+    files:
+      - label: "Current Grants"
+        name: "grants_current_list"
+        file: "content/grants-current.json"
+        format: "json"
+        fields:
+          - label: "Grants"
+            name: "grants"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Awarded To", name: "awardedTo", widget: "string" }
+              - { label: "Sponsor", name: "sponsor", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }
+
+  - name: "grants_lastyear"
+    label: "Connect Grants - Last Year"
+    files:
+      - label: "Last Year Grants"
+        name: "grants_lastyear_list"
+        file: "content/grants-lastyear.json"
+        format: "json"
+        fields:
+          - label: "Grants"
+            name: "grants"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Recipient", name: "recipient", widget: "string" }
+              - { label: "Award", name: "award", widget: "string", required: false }
+              - { label: "Total Served", name: "totalServed", widget: "string", required: false }
+              - { label: "Amount Awarded", name: "amountAwarded", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Image Alt Text", name: "alt", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }

@@ -1540,7 +1540,8 @@ select:focus {
 
 .grants-carousel {
   position: relative;
-  margin-top: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto 0;
 }
 
 .grants-carousel-viewport {
@@ -1550,31 +1551,47 @@ select:focus {
 
 .grants-carousel-track {
   display: flex;
-  transition: transform 0.75s ease;
+  transition: transform 0.7s ease;
   will-change: transform;
 }
 
-/* Slide container */
-
 .grant-slide {
   min-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   background: #fff;
   border-radius: 16px;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-border);
-
   padding: clamp(2rem, 4vw, 3rem);
 }
 
-/* Slide content */
+.grant-slide-has-image {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: center;
+}
+
+.grant-slide-no-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grant-slide-media img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
 
 .grant-slide-copy {
   max-width: 720px;
   text-align: center;
+}
+
+.grant-slide-has-image .grant-slide-copy {
+  text-align: left;
 }
 
 .grant-slide-title {
@@ -1589,6 +1606,77 @@ select:focus {
   line-height: 1.8;
   color: #3c4760;
   margin-bottom: 0.75rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.05);
+  background: var(--color-primary-2);
+}
+
+.carousel-btn-prev {
+  left: -24px;
+}
+
+.carousel-btn-next {
+  right: -24px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(31, 49, 93, 0.25);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot.active {
+  background: var(--color-accent);
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .grant-slide-has-image {
+    grid-template-columns: 1fr;
+  }
+
+  .grant-slide-copy,
+  .grant-slide-has-image .grant-slide-copy {
+    text-align: center;
+  }
+
+  .carousel-btn-prev,
+  .carousel-btn-next {
+    display: none;
+  }
+
+  .grant-slide {
+    padding: 2rem 1.25rem;
+  }
 }
 
 

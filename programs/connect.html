@@ -237,7 +237,7 @@
           <h4>About</h4>
           <ul>
             <li><a href="/about.html">Mission & History</a></li>
-            <li><a href="/about.html#board">Board & Staff</a></li>
+            <li><a href="/about/board-staff.html">Board & Staff</a></li>
             <li><a href="/programs.html">Programs</a></li>
           </ul>
         </div>
@@ -265,12 +265,18 @@
       </div>
     </div>
   </footer>
+<script src="/js/grants-current.js"></script>
+<script src="/js/grants-lastyear.js"></script>
 <script src="/js/grants-carousel.js"></script>
-<script src="/js/grants-2425.js"></script>
-<script src="/js/grants-2526.js"></script>
+
 <script>
-buildGrantCarousel(grants2526,"grantsCarouselTrack","grantsCarouselDots");
-buildGrantCarousel(grants2425,"lastYearCarouselTrack","lastYearCarouselDots");
+  document.addEventListener("DOMContentLoaded", async () => {
+    await loadCurrentGrants();
+    await loadLastYearGrants();
+
+    buildGrantCarousel(grants2026, "grantsCarouselTrack", "grantsCarouselDots");
+    buildGrantCarousel(grants2025, "lastYearCarouselTrack", "lastYearCarouselDots");
+  });
 </script>
 </body>
 </html>
