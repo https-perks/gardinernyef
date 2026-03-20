@@ -1,3 +1,100 @@
 {
-  "members": []
+  "members": [
+    {
+      "name": "George Bumann",
+      "title": "Advisory Council Member",
+      "bio": "George Bumann and his wife have been residents of the Gardiner community for almost 20 years and have one child in Jr. High. George holds Bachelor's and Master's degrees in wildlife ecology and has worked as an educator in various capacities. He is employed through his own business, focusing on fine art, bronze sculpture. He is an avid birder, hiker, and paddler.  George served on the NYEF Board until December 2022 and is deeply grateful for the opportunity to serve on the board as and to call this special place home.",
+      "photo": "/images/advisory/georgesr.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Dr. Nico Wood Kos is a grant writer and story teller with a Ph.D. in communication studies. \n\nAs our previous Director, Nico's expertise and advise are valued by our organization. \n\nNico and her family have relocated to Indiana.",
+      "photo": "/images/advisory/drnico.png",
+      "name": "Dr. Nico Wood Kos"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Sandy Choate has been a resident of Gardiner since 2006.  She moved here permanently from Austin, Texas with her husband in 2021.  She is a graduate of the University of Texas at Austin with a degree in public relations and journalism.  Her background includes working for non-profit organizations for many years in director statuses and owning Scout Realty in Austin for the past 25 years.  She also proudly served on the Yellowstone Association Board of Directors from 2006 to 2018.",
+      "photo": "/images/advisory/sandy.png",
+      "name": "Sandy Choate"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Becky moved to the Gardiner area in 2001 after completing a degree in Natural Resource Management at the University of Minnesota, Crookston. She worked seasonally in Yellowstone National Park before moving around for a few years to work in other western national parks; she returned to Gardiner with her husband in 2011 for a permanent position in Yellowstone.  All of her work experience is in Wildland Fire Management and Resource Management.She has volunteered for many organizations over the past 20 years doing everything from planting trees, acting as Natural Resource club President and Vice President, walking dogs, organizing and volunteering for community events, to Secretary of the Greater Gardiner Community Council. Although Becky has no two legged children, she believes the Gardiner School and the students are the backbone of the community and are one of the most important investments for the future of our town.",
+      "name": "Becky Smith",
+      "photo": "/images/advisory/becky.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Originally from Maryland, Bianca and her family moved to Mammoth Hot Springs, Wyoming in 2009 and are now thankful to call Gardiner home. She is an exhibit specialist in the Resource Education and Youth Programs Division at Yellowstone National Park and enjoys photography, backpacking, running, gardening, traveling internationally, and is happiest on skis. She has coordinated and coached the Gardiner-Mammoth Ski Team since 2018 and helps to keep our community radio stations going as the Vice President of the Gardiner Mammoth FM Association. Her husband Patrick is a teacher at Pine Creek School and together, they are the proud parents of Garrett and Avery. As a family, they enjoy camping, hiking, fishing, hunting, and exploring the Greater Yellowstone area in their vintage Scamp camper.",
+      "name": "Bianca Klein",
+      "photo": "/images/advisory/bianca.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "name": "Matt Lumley",
+      "bio": "N/A",
+      "photo": "/images/advisory/matt.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Kathy Nichols has over 30 years of experience in Human Resources. After a decade in The retail industry, she transitioned into consulting, working with global clients at Accenture. She later became Director of HR for Booz Allen Hamilton, and then led HR for Jabian Consulting. Finally, she had the exciting opportunity to leverage her experience for her passion when she and her husband moved to Yellowstone. Kathy led HR for The Yellowstone Association, and later Yellowstone Forever. Now she is mentoring and consulting again, working from her home in Gardiner. ",
+      "name": "Kathy Nichols",
+      "photo": "/images/advisory/kathy.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Wendi (Wagner) Burke was born and raised in Gardiner Montana.  She attended Gardiner schools for elementary through high school. She graduated with a bachelor's degree in Elementary Education from MSU Bozeman. She and her husband Ron have three children who have or will be graduating from Gardiner schools. In addition to managing vacation rentals, and personal training, she stays involved with students and the school as a track coach, occasional bus driver and coordinator for the Gardiner Schools Athletics Boosters Club. ",
+      "name": "Wendi (Wagner) Burke",
+      "photo": "/images/advisory/wendi.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Dennis McIntosh first came to western Montana by train, landing in Livingston Montana in the mid 70’s.  He spent most of his formative school years as a Gardiner Bruin playing basketball.  Dennis left Gardiner in the early 80’s to settle in northern New Hampshire.  After working at a non-profit for nearly 30 years and raising a son, Dennis resigned himself back into the allure of the Absaroka-Beartooth Wilderness and Yellowstone National Park.  Dennis believes a healthy community relies on the input and involvement of all community members, and good decisions often come from hard conversations.",
+      "name": "Dennis McIntosh",
+      "photo": "/images/advisory/dennis.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Cara is a biologist, naturalist guide and local business owner at In Our Nature Guiding Services. She genuinely enjoys helping others develop and feed their fascinations in the natural world. She has lived in Gardiner, MT since 2014 and previously worked in Redwood National Park in Northern California, McMurdo research station in Antarctica, the outback of Western Australia, and the jungles of Papua New Guinea.",
+      "name": "Cara McGary",
+      "photo": "/images/advisory/cara.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Anna moved to Gardiner in 2003 for a six month position and loved it so much, she never left. She is in her 10th year as owner of the Tumbleweed Bookstore and Cafe. She is also the chef at Gardiner School, for which she received the Montana Governor’s Food in School Excellence Award, one of only four given out throughout the state this year. Anna is involved in several different community organizations and brings endless energy and enthusiasm to help plan fundraisers for non-profits in Gardiner and Mammoth.",
+      "name": "Anna Holloway",
+      "photo": "/images/advisory/anna.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Jeff's career blends together software product development, people and product management, strategy formulation and implementation, business development and technical marketing. Most recently he was VP of the Global Alliances at Arrow Electronics, a $3B business, focused on Sustainability Services, Internet of Things, Vision AI, Modern Workplace, and Supply Chain Services. Jeff closed out his tenure at Arrow with the award of Microsoft's Indirect Partner of the Year. He currently is an active board member of three startups, and is invested in multiple early and mid stage tech companies.",
+      "name": "Jeff Reed",
+      "photo": "/images/advisory/jeff.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "name": "Shelby Detro",
+      "bio": "Shelby Detro is the Business Manager/Clerk for Gardiner Public Schools. She loves exploring mountains and exploring rivers with her husband. She otherwise enjoys spending her free time crafting, completing home projects and reading novels.",
+      "photo": "/images/advisory/logo.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Jeff Brown retired in 2016 as the executive director of the Yellowstone Association.  His 35 year career was focused on managing nonprofit education organizations in partnership with the public land agencies.  He and his wife Wendy moved to Mammoth Hot Springs in 1997 and to Gardiner in 2011.  Their three daughters attended the Yellowstone Park School and the Gardiner School.  In retirement, Jeff has continued to support the National Park Service by volunteering at Denali and Canyonlands.",
+      "name": "Jeff Brown",
+      "photo": "/images/advisory/jeffb.png"
+    },
+    {
+      "title": "Advisory Council Member",
+      "bio": "Born and raised in Billings, Montana, Scott Demaree has had family ties to Gardiner since the early 1970's. He moved his family to Gardiner in 1991 and his three children are Gardiner School alumni. Scott has served on the Gardiner Lion's Club, the Gardiner Chamber of Commerce Board, and the Convention and Visitors Bureau. He and his wife own the Gardiner Market. Scott is also an avid outdoorsman, boater, bird hunter.",
+      "photo": "/images/advisory/scott.png",
+      "name": "Scott Demaree"
+    },
+    {
+      "title": "Advisory Council Member",
+      "name": "Nelson Miller",
+      "photo": "/images/advisory/nelson.png",
+      "bio": "Nelson Miller is a retired urban planner with forty years of experience in planning and development.  Prior to his retirement he was a Principal with MIG, a planning and design firm headquartered in Berkeley, CA and a member of the American Institute of Certified Planners.  In 2018, he was inducted into the Planner Emeritus Network.  He is excited to assist the Gardiner North Yellowstone Education Foundation in developing additional housing in the Gardiner Community."
+    }
+  ]
 }
