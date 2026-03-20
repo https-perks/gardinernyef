@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "board"
+    label: "Board Members"
+    folder: "content/board"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Bio", name: "bio", widget: "markdown" }
+
+  - name: "staff"
+    label: "Advisory Staff"
+    folder: "content/staff"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Bio", name: "bio", widget: "markdown" }
+
+  - name: "grants"
+    label: "Connect Grants"
+    folder: "content/grants"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - { label: "Year", name: "year", widget: "number" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Awarded To", name: "awarded_to", widget: "string" }
+      - { label: "Sponsor", name: "sponsor", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "markdown" }

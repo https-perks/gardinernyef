@@ -1008,7 +1008,7 @@ select:focus {
 .page-link-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: clamp(60px, 8vw, 120px);
   padding: clamp(1.25rem, 2vw, 1.75rem);
   background: #fff;
@@ -1030,7 +1030,6 @@ select:focus {
   font-weight: 800;
   text-align: center;
   color: var(--color-primary);
-  margin-bottom: 0.01rem;
 }
 
 .page-link-text {
