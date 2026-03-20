@@ -123,6 +123,12 @@ p {
   margin: 0;
 }
 
+.vertical-hr {
+  width: 100px;          /* This becomes the line's height after rotation */
+  height: 2px;           /* This becomes the line's width */
+  transform: rotate(90deg);
+}
+
 /* =========================
    3. GLOBAL UTILITIES
 ========================= */
@@ -371,6 +377,16 @@ p {
   gap: clamp(0.75rem, 1.5vw, 1rem);
 }
 
+.construction-hero {
+  position: relative;
+  min-height: clamp(420px, 52vw, 720px);
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(20, 26, 42, 0.28), rgba(20, 26, 42, 0.28)),
+    url("/images/under-construction.jpg") center center / cover no-repeat;
+  color: #fff;
+}
 /* =========================
    7. MISSION / SPLIT SECTION
 ========================= */
