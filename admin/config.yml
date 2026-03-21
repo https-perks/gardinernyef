@@ -154,34 +154,34 @@ collections:
               - { label: "Cover Image", name: "image", widget: "image", media_folder: "/images/press", public_folder: "/images/press" }
               - { label: "PDF File", name: "file", widget: "file", media_folder: "/images/press", public_folder: "/images/press" }
 
-      - name: "faq"
-        label: "FAQ"
-        files:
-          - label: "FAQ Page"
-            name: "faq_page"
-            file: "content/faq.json"
-            format: "json"
+  - name: "faq"
+    label: "FAQ"
+    files:
+      - label: "FAQ Page"
+        name: "faq_page"
+        file: "content/faq.json"
+        format: "json"
+        fields:
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
             fields:
-              - label: "Intro"
-                name: "intro"
-                widget: "object"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
 
-              - label: "Categories"
-                name: "categories"
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Category Title", name: "title", widget: "string" }
+              - label: "Questions"
+                name: "items"
                 widget: "list"
-                summary: "{{fields.title}}"
+                summary: "{{fields.question}}"
                 fields:
-                  - { label: "Category Title", name: "title", widget: "string" }
-                  - label: "Questions"
-                    name: "items"
-                    widget: "list"
-                    summary: "{{fields.question}}"
-                    fields:
-                      - { label: "Question", name: "question", widget: "string" }
-                      - { label: "Answer", name: "answer", widget: "markdown" }
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "markdown" }
 
   - name: "accomplishments"
     label: "Accomplishments"
