@@ -1,0 +1,39 @@
+{
+  "video": {
+    "enabled": true,
+    "embed": "https://www.youtube.com/embed/bS-L-q2SZlo",
+    "caption": "A walkthrough of our new NYEF teacher housing."
+  },
+  "highlights": [
+    {
+      "title": "Housing Crisis Response",
+      "text": "NYEF continues to address one of Gardiner’s most urgent needs by expanding affordable teacher and staff housing."
+    },
+    {
+      "title": "Growing Capacity",
+      "text": "NYEF has transformed existing properties into multiple housing units and continues to add new units in partnership with the school."
+    },
+    {
+      "title": "Supporting Recruitment and Retention",
+      "text": "Providing affordable, high-quality housing helps Gardiner Public Schools attract and retain the educators students depend on."
+    }
+  ],
+  "featured_link": {
+    "text": "Check out KBZK's news report on our housing project.",
+    "url": "https://www.kbzk.com/news/montana-news/housing-provided-for-gardiner-school-teachers"
+  },
+  "gallery": [
+    {
+      "image": "/images/housing/housing-1.png",
+      "alt": "Exterior view of teacher housing"
+    },
+    {
+      "image": "/images/housing/housing-2.png",
+      "alt": "Interior living area of teacher housing"
+    },
+    {
+      "image": "/images/housing/housing-3.png",
+      "alt": "Volunteers working on housing renovations"
+    }
+  ]
+}

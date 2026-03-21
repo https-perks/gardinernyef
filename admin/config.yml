@@ -65,13 +65,15 @@ collections:
           - label: "Events"
             name: "events"
             widget: "list"
-            summary: "{{fields.title}}"
+            summary: "{{fields.title}} — {{fields.date}}"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Date", name: "date", widget: "date" }
+              - { label: "Time", name: "time", widget: "string", required: false }
               - { label: "Location", name: "location", widget: "string", required: false }
               - { label: "Description", name: "description", widget: "text", required: false }
               - { label: "Link", name: "link", widget: "string", required: false }
+              - { label: "Link Text", name: "linkText", widget: "string", required: false }
 
   - name: "grants_current"
     label: "Connect Grants - Current Year"
@@ -109,6 +111,235 @@ collections:
               - { label: "Award", name: "award", widget: "string", required: false }
               - { label: "Total Served", name: "totalServed", widget: "string", required: false }
               - { label: "Amount Awarded", name: "amountAwarded", widget: "string", required: false }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+                media_folder: "/images/connect-grants"
+                public_folder: "/images/connect-grants"
+                allow_multiple: false
               - { label: "Image Alt Text", name: "alt", widget: "string", required: false }
               - { label: "Description", name: "description", widget: "text" }
+
+  - name: "communications"
+    label: "Newsletters & Reports"
+    files:
+      - label: "Newsletters"
+        name: "newsletters"
+        file: "content/newsletters.json"
+        format: "json"
+        fields:
+          - label: "Newsletter Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Label", name: "label", widget: "string", default: "Newsletter" }
+              - { label: "Image", name: "image", widget: "image", media_folder: "/images/press", public_folder: "/images/press" }
+              - { label: "Link", name: "link", widget: "string" }
+
+      - label: "Annual Reports"
+        name: "annual_reports"
+        file: "content/annual-reports.json"
+        format: "json"
+        fields:
+          - label: "Annual Report Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.year}} — {{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string", default: "Annual Report" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Cover Image", name: "image", widget: "image", media_folder: "/images/press", public_folder: "/images/press" }
+              - { label: "PDF File", name: "file", widget: "file", media_folder: "/images/press", public_folder: "/images/press" }
+
+      - name: "faq"
+        label: "FAQ"
+        files:
+          - label: "FAQ Page"
+            name: "faq_page"
+            file: "content/faq.json"
+            format: "json"
+            fields:
+              - label: "Intro"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Category Title", name: "title", widget: "string" }
+                  - label: "Questions"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.question}}"
+                    fields:
+                      - { label: "Question", name: "question", widget: "string" }
+                      - { label: "Answer", name: "answer", widget: "markdown" }
+
+  - name: "accomplishments"
+    label: "Accomplishments"
+    files:
+      - label: "Accomplishments Page"
+        name: "accomplishments_page"
+        file: "content/accomplishments.json"
+        format: "json"
+        fields:
+          - label: "Page Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Intro Text", name: "text", widget: "text", required: false }
+
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.text}}"
+                fields:
+                  - { label: "Item", name: "text", widget: "text" }
+
+  - name: "history"
+    label: "History"
+    files:
+      - label: "History Timeline"
+        name: "history_timeline"
+        file: "content/history.json"
+        format: "json"
+        fields:
+          - label: "Timeline Items"
+            name: "timeline"
+            widget: "list"
+            summary: "{{fields.year}} — {{fields.title}}"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Content", name: "content", widget: "markdown" }
+
+  - name: "mental_health"
+    label: "Mental Health Initiative"
+    files:
+      - label: "Mental Health Content"
+        name: "mental_health_content"
+        file: "content/mental-health.json"
+        format: "json"
+        fields:
+          - label: "Video"
+            name: "video"
+            widget: "object"
+            fields:
+              - { label: "Show Video", name: "enabled", widget: "boolean", default: false }
+              - { label: "YouTube Embed URL", name: "embed", widget: "string", required: false }
+              - { label: "Caption", name: "caption", widget: "text", required: false }
+
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Featured Staff"
+            name: "featured_staff"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Image", name: "image", widget: "image", required: false, media_folder: "images/mental-health", public_folder: "/images/mental-health" }
+              - { label: "Name", name: "name", widget: "string", required: false }
+              - { label: "Role", name: "role", widget: "string", required: false }
+              - { label: "Bio", name: "bio", widget: "markdown", required: false }
+
+          - label: "Additional Programs"
+            name: "additional_programs"
+            widget: "object"
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false, media_folder: "images/mental-health", public_folder: "/images/mental-health" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "markdown" }
+
+  - name: "housing"
+    label: "Housing Initiative"
+    files:
+      - label: "Housing Content"
+        name: "housing_content"
+        file: "content/housing.json"
+        format: "json"
+        fields:
+          - label: "Video"
+            name: "video"
+            widget: "object"
+            fields:
+              - { label: "Show Video", name: "enabled", widget: "boolean", default: false }
+              - { label: "YouTube Embed URL", name: "embed", widget: "string", required: false }
+              - { label: "Caption", name: "caption", widget: "text", required: false }
+
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Featured Link"
+            name: "featured_link"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Link Text", name: "text", widget: "string", required: false }
+              - { label: "URL", name: "url", widget: "string", required: false }
+
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Image", name: "image", widget: "image", media_folder: "images/housing", public_folder: "/images/housing" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+
+  - name: "donation"
+    label: "Donation Page"
+    files:
+      - label: "Donation Content"
+        name: "donation_content"
+        file: "content/donation.json"
+        format: "json"
+        fields:
+          - label: "Campaign"
+            name: "campaign"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false, media_folder: "images/donation", public_folder: "/images/donation" }
+              - { label: "Letter", name: "letter", widget: "markdown" }
+              - { label: "Signature", name: "signature", widget: "string", required: false }
+
+          - label: "Giving Options"
+            name: "giving_options"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }
+              - { label: "Image", name: "image", widget: "image", required: false, media_folder: "images/donation", public_folder: "/images/donation" }
+              - { label: "Link Text", name: "linkText", widget: "string", required: false }
+              - { label: "Link URL", name: "linkUrl", widget: "string", required: false }

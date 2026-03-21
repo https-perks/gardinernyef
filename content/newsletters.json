@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Fall 2025",
+      "label": "Newsletter",
+      "image": "/images/press/fall-25.png",
+      "link": "https://www.canva.com/design/DAG5R-lv6zk/eg41YLY0cllgbHwafnGinw/watch?utm_content=DAG5R-lv6zk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h94c7855ed2"
+    },
+    {
+      "title": "Summer 2025",
+      "label": "Newsletter",
+      "image": "/images/press/summer-25.png",
+      "link": "https://www.canva.com/design/DAGs4YBe6bU/L_q1Nteby-UDT-yzjSXFjg/view?utm_content=DAGs4YBe6bU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2cf6e6523f"
+    },
+    {
+      "title": "Winter 2025",
+      "label": "Newsletter",
+      "image": "/images/press/winter-25.png",
+      "link": "https://www.canva.com/design/DAGiYxZ0sig/0c8PXfI1cU32DXFTKxODBA/view?utm_content=DAGiYxZ0sig&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he250145719"
+    },
+    {
+      "title": "Year End 2024",
+      "label": "Newsletter",
+      "image": "/images/press/ye-24.png",
+      "link": "https://mailchi.mp/69d101fd9295/happy-holidays"
+    }
+  ]
+}

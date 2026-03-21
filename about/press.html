@@ -29,8 +29,8 @@
 
       <nav class="nav-menu" aria-label="Main navigation">
         <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/programs.html" class="active">Programs</a>
+        <a href="/about.html" class="active">About</a>
+        <a href="/programs.html">Programs</a>
         <a href="/events.html">Events</a>
         <a href="/get-involved.html">Get Involved</a>
       </nav>
@@ -46,85 +46,48 @@
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="section press-hero">
       <div class="container">
-        <div class="page-hero-banner">
-          <img src="/images/NYEFbanner.png" alt="Connect! Grants banner">
+        <div class="press-hero-banner">
+          <img src="/images/NYEFbanner.png" alt="North Yellowstone Education Foundation banner">
         </div>
       </div>
     </section>
-    <section class="section housing-page">
+
+    <section class="section press-page">
       <div class="container">
-        <header class="housing-header">
-          <span class="eyebrow text-center" style="display: block;">Program Spotlight</span>
-          <h1 class="section-title">Teacher Housing Initiative</h1>
-          <p class="section-subtitle">
-            Creating affordable housing solutions that help Gardiner Public Schools recruit and retain teachers and
-            staff.
-          </p>
-        </header>
+        <h1 class="section-title">Newsletters & Annual Reports</h1>
+        <p class="section-subtitle">Browse NYEF newsletters and annual reports.</p>
 
-        <section class="housing-overview">
-          <div class="housing-card">
-            <h2 class="housing-section-title">North Yellowstone Education Foundation has a solution.</h2>
-            <div class="housing-body">
-              <p>
-                Gardiner is facing a serious housing crisis. Through the 2019 Successful Gardiner Campaign, affordable
-                housing was identified as the top concern among residents, and the local market continues to make it
-                difficult for school employees to find stable housing.
-              </p>
-              <p>
-                This challenge directly affects Gardiner Public Schools’ ability to hire and retain teachers and staff.
-                NYEF’s Teacher Housing Initiative was created to help address that need with practical, long-term
-                solutions.
-              </p>
-              <p>
-                Since 2020, NYEF has worked to transform existing housing into affordable units for educators and staff.
-                That work has included converting a historic building into multiple units, adding additional housing in
-                a second property, and continuing to expand capacity in partnership with the school.
-              </p>
-              <p>
-                By creating affordable, quality housing, NYEF helps strengthen staffing stability and supports a
-                stronger learning environment for Gardiner students.
-              </p>
-            </div>
-            <p class="housing-link-wrap" id="housing-featured-link"></p>
+        <div class="press-section">
+          <h2 class="press-section-title">Newsletters</h2>
+          <div class="press-grid" id="newsletters-grid">
+            <!-- cards -->
           </div>
-        </section>
+        </div>
 
-        <section class="housing-highlights">
-          <h2 class="housing-section-title">Current Focus</h2>
-          <div class="housing-highlight-grid" id="housing-highlights"></div>
-        </section>
-
-        <section class="housing-video-section" id="housing-video-section">
-          <div class="housing-video-wrap" id="housing-video-wrap"></div>
-          <p class="housing-video-caption" id="housing-video-caption"></p>
-        </section>
-
-        <section class="housing-gallery-section">
-          <h2 class="housing-section-title">Housing Gallery</h2>
-          <div class="housing-gallery-shell">
-            <button class="housing-gallery-btn housing-gallery-btn--prev" id="housing-prev" type="button"
-              aria-label="Previous image">
-              ‹
-            </button>
-
-            <div class="housing-gallery-frame" id="housing-gallery-frame">
-              <img class="housing-gallery-image active" id="housing-gallery-image-a" src="" alt="">
-              <img class="housing-gallery-image" id="housing-gallery-image-b" src="" alt="">
-            </div>
-
-            <button class="housing-gallery-btn housing-gallery-btn--next" id="housing-next" type="button"
-              aria-label="Next image">
-              ›
-            </button>
+        <div class="press-section">
+          <h2 class="press-section-title">Annual Reports</h2>
+          <div class="press-grid" id="annual-reports-grid">
+            <!-- cards -->
           </div>
-        </section>
+        </div>
+
+        <div class="press-signup">
+          <div class="press-signup-inner">
+            <div>
+              <h2 class="press-signup-title">Sign up for Newsletters</h2>
+              <p class="press-signup-text">Get updates delivered to your inbox.</p>
+            </div>
+            <a class="btn btn-primary" href="https://secure.lglforms.com/form_engine/s/II6ptjkwSvKGPUh53RCScA"
+              target="_blank" rel="noopener noreferrer">
+              Subscribe
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -204,7 +167,8 @@
         </div>
       </div>
   </footer>
-  <script src="/js/programs/housing.js"></script>
+  <script src="/js/newsletters/newsletters.js"></script>
+  <script src="/js/newsletters/annual-reports.js"></script>
 </body>
 
 </html>

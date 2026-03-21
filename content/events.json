@@ -1,3 +1,92 @@
 {
-  "events": []
+  "events": [
+    {
+        "title": "Spring Break",
+        "date": "2026-03-16",
+        "time": "",
+        "location": "",
+        "description": "",
+        "link": "",
+        "linkText": ""
+    },
+    {
+        "title": "Spring Break",
+        "date": "2026-03-17",
+        "time": "",
+        "location": "",
+        "description": "",
+        "link": "",
+        "linkText": ""
+    },
+    {
+        "title": "Spring Break",
+        "date": "2026-03-18",
+        "time": "",
+        "location": "",
+        "description": "",
+        "link": "",
+        "linkText": ""
+    },
+    {
+        "title": "Spring Break",
+        "date": "2026-03-19",
+        "time": "",
+        "location": "",
+        "description": "",
+        "link": "",
+        "linkText": ""
+    },
+    {
+      "title": "Early Release Programming",
+      "date": "2026-03-26",
+      "time": "1:00PM–4:00PM",
+      "location": "Gardiner School",
+      "description": "",
+      "link": "",
+      "linkText": ""
+    },
+    {
+      "title": "CONNECT! Grant Application Due",
+      "date": "2026-03-29",
+      "location": "",
+      "description": "",
+      "link": "",
+      "linkText": ""
+    },
+    {
+      "title": "Parent/Teacher Conferences",
+      "date": "2026-04-07",
+      "time": "4:00PM–7:00PM",
+      "location": "Gardiner School",
+      "description": "",
+      "link": "",
+      "linkText": ""
+    },
+    {
+      "title": "Parent/Teacher Conferences",
+      "date": "2026-04-08",
+      "time": "4:00PM–7:00PM",
+      "location": "Gardiner School",
+      "description": "",
+      "link": "",
+      "linkText": ""
+    },
+    {
+      "title": "Early Release Programming",
+      "date": "2026-04-09",
+      "time": "1:00PM–4:00PM",
+      "location": "Gardiner School",
+      "description": "",
+      "link": "",
+      "linkText": ""
+    },
+    {
+      "title": "Last Day of School",
+      "date": "2026-06-03",
+      "location": "Gardiner School",
+      "description": "",
+      "link": "",
+      "linkText": ""
+    }
+  ]
 }

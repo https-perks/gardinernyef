@@ -1,0 +1,22 @@
+{
+  "campaign": {
+    "title": "2026 Campaign",
+    "image": "/images/donation/campaign-2026.png",
+    "letter": "The Gardiner community is calling for your generous support as we work to strengthen vital programs and initiatives for our students.\n\nWe are seeking support for essential mental health services so that students can continue to benefit from skilled mental health therapists and behavioral specialists. This support helps foster a safe, nurturing environment for all students.\n\nWe are also raising support for our Connect! Grants program, which helps enrich student experiences through opportunities such as World Quest, outdoor educational programs, and the Jr. High Band Festival. These experiences enhance learning while also promoting teamwork, confidence, and personal growth.\n\nIn addition, we continue working collaboratively with Gardiner School on future improvement projects that strengthen student opportunity, physical wellness, and community connection.\n\nTogether, we can create spaces and opportunities that reflect the strength and compassion of our community. Your support is invaluable as we stand united for our students, our educators, and the future of Gardiner.",
+    "signature": "Laura Chastain, Director"
+  },
+  "giving_options": [
+    {
+      "title": "Become a Monthly Donor",
+      "text": "Monthly donations create stability. They help ensure NYEF’s important programming can continue to flourish year after year.\n\nYour monthly gift helps fill educational gaps through our Connect! Grants program, provide mental health resources for GPS students, and support affordable housing for GPS teachers and staff. Every recurring donation helps strengthen the lives of students at Gardiner Public Schools.",
+      "image": "/images/donation/monthly-donor.jpg"
+    },
+    {
+      "title": "For a Cause",
+      "text": "Celebrating a birthday? Honoring someone special who made a difference? You can create a fundraiser in support of NYEF and invite friends and family to give alongside you.",
+      "image": "/images/donation/for-a-cause.jpg",
+      "linkText": "Create a Facebook Fundraiser",
+      "linkUrl": "/images/donation/facebook-fundraiser.pdf"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "video": {
+    "enabled": false,
+    "embed": "https://www.youtube.com/embed/jAnMLV9Gt5o",
+    "caption": "Learn more about the work of Rural Resilience and its role in supporting rural communities."
+  },
+  "highlights": [
+    {
+      "title": "Community-Based Support",
+      "text": "Our mental health efforts focus on connecting Gardiner students and families with meaningful, rural-accessible support."
+    },
+    {
+      "title": "School-Year Expansion",
+      "text": "Rural Resilience has worked to expand services for the 2025–2026 school year, including additional support for rural families."
+    },
+    {
+      "title": "On-Site School Support",
+      "text": "Rural Resilience has hired a Mental Health Therapist who will be serving at Gardiner School."
+    }
+  ],
+  "featured_staff": {
+    "image": "/images/mental-health/laramie.jpg",
+    "name": "Laramie",
+    "role": "Mental Health Therapist",
+    "bio": "Hi, I’m Laramie, a mental health therapist joining Rural Resilience. I’m passionate about supporting the emotional well-being of students and their families.\n\nI work to create a calm, welcoming space where young people can feel heard, understood, and empowered. My approach focuses on helping students navigate stress, friendships, identity, and life transitions while building confidence and healthy coping skills.\n\nI’m grateful to be part of this community and look forward to working closely with staff, parents, and caregivers to support student growth and wellness."
+  },
+  "additional_programs": {
+    "items": [
+      {
+        "image": "/images/mental-health/bruin-strong-1.jpg",
+        "title": "Bruin Strong",
+        "text": "Gardiner School began a new program in 2021 called Character Strong, locally known as **Bruin Strong**. NYEF continues to support this work through our Connect! Grants program."
+      },
+      {
+        "image": "/images/mental-health/bruin-strong-2.jpg",
+        "title": "Social-Emotional Learning Support",
+        "text": "Support has included adding social-emotional books to the school library and helping send teachers to the Character Strong national conference."
+      }
+    ]
+  }
+}
