@@ -846,6 +846,25 @@ select:focus {
   .donate-box {
     padding: 2rem 1.25rem;
   }
+
+  .nav-menu.is-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  padding: 1.25rem;
+  border-top: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  z-index: 999;
+}
+
+}
+
+.navbar {
+  position: relative;
 }
 
 @media (max-width: 640px) {
